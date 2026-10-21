@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <!-- 여백은 안쪽 레이아웃에 (바깥은 시스템바 여백이 덮어씀) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ExplicitIntent  실습"
+            android:textColor="#8BC34A"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="LOGIN"
+            android:textColor="#F08080"
+            android:textSize="16sp" />
+
+        <!-- 입력칸 이미지를 배경으로, 아이콘 자리만큼 왼쪽 여백 -->
+        <EditText
+            android:id="@+id/editId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/id_before"
+            android:paddingStart="50dp"
+            android:paddingEnd="16dp"
+            android:hint="아이디를 입력하세요"
+            android:textSize="14sp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editPasswd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/passwd_before"
+            android:paddingStart="50dp"
+            android:paddingEnd="16dp"
+            android:hint="비밀번호를 입력하세요"
+            android:textSize="14sp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button"
+            android:text="로그인"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+</LinearLayout>

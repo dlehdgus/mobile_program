@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/ 에 추가 : 정답 영역(투명 ImageView) 공통 스타일 -->
+<resources>
+    <style name="Spot">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>
