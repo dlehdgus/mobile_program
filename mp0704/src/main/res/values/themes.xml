@@ -3,11 +3,14 @@
     <style name="Base.Theme.Mp2602" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item	name="colorPrimary">@color/ActionBar</item>
-        <item	name="android:statusBarColor">@color/statusBar</item>
-        <item	name="android:windowLightStatusBar">true</item>
-        <item	name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
-    <style name="Theme.Mp2602" parent="Base.Theme.Mp2602" />
+    <!-- 액션 바를 표시하려면 NoActionBar가 아닌 DarkActionBar 계열 테마를 사용해야 함 -->
+    <style name="Base.myTheme.Mp2602" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/ActionBar</item>
+        <item name="android:statusBarColor">@color/statusBar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Theme.Mp2602" parent="Base.myTheme.Mp2602" />
 </resources>
