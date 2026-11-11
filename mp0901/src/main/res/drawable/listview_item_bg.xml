@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 선택(체크)된 항목은 노란색으로 표시 -->
+    <item android:state_activated="true" android:drawable="@color/item_selected" />
+    <item android:drawable="@android:color/transparent" />
+</selector>
